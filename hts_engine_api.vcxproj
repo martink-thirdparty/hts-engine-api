@@ -33,11 +33,11 @@
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\property sheets\MartinK build settings.props" />
+    <Import Project="..\..\property-sheets\build settings.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\property sheets\MartinK build settings.props" />
+    <Import Project="..\..\property-sheets\build settings.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
@@ -47,7 +47,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>source\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>vanilla\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -56,25 +56,25 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>source\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>vanilla\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PrecompiledHeader />
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="source\lib\HTS_audio.c" />
-    <ClCompile Include="source\lib\HTS_engine.c" />
-    <ClCompile Include="source\lib\HTS_gstream.c" />
-    <ClCompile Include="source\lib\HTS_label.c" />
-    <ClCompile Include="source\lib\HTS_misc.c" />
-    <ClCompile Include="source\lib\HTS_model.c" />
-    <ClCompile Include="source\lib\HTS_pstream.c" />
-    <ClCompile Include="source\lib\HTS_sstream.c" />
-    <ClCompile Include="source\lib\HTS_vocoder.c" />
+    <ClCompile Include="vanilla\lib\HTS_audio.c" />
+    <ClCompile Include="vanilla\lib\HTS_engine.c" />
+    <ClCompile Include="vanilla\lib\HTS_gstream.c" />
+    <ClCompile Include="vanilla\lib\HTS_label.c" />
+    <ClCompile Include="vanilla\lib\HTS_misc.c" />
+    <ClCompile Include="vanilla\lib\HTS_model.c" />
+    <ClCompile Include="vanilla\lib\HTS_pstream.c" />
+    <ClCompile Include="vanilla\lib\HTS_sstream.c" />
+    <ClCompile Include="vanilla\lib\HTS_vocoder.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="source\lib\HTS_hidden.h" />
+    <ClInclude Include="vanilla\lib\HTS_hidden.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

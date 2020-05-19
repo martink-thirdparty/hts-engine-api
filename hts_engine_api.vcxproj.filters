@@ -15,36 +15,36 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="source\lib\HTS_audio.c">
+    <ClCompile Include="vanilla\lib\HTS_audio.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\lib\HTS_engine.c">
+    <ClCompile Include="vanilla\lib\HTS_engine.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\lib\HTS_gstream.c">
+    <ClCompile Include="vanilla\lib\HTS_gstream.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\lib\HTS_label.c">
+    <ClCompile Include="vanilla\lib\HTS_label.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\lib\HTS_misc.c">
+    <ClCompile Include="vanilla\lib\HTS_misc.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\lib\HTS_model.c">
+    <ClCompile Include="vanilla\lib\HTS_model.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\lib\HTS_pstream.c">
+    <ClCompile Include="vanilla\lib\HTS_pstream.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\lib\HTS_sstream.c">
+    <ClCompile Include="vanilla\lib\HTS_sstream.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\lib\HTS_vocoder.c">
+    <ClCompile Include="vanilla\lib\HTS_vocoder.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="source\lib\HTS_hidden.h">
+    <ClInclude Include="vanilla\lib\HTS_hidden.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
