@@ -673,10 +673,9 @@ static HTS_Boolean HTS_Model_load_tree(HTS_Model * model, HTS_File * fp)
             HTS_Model_clear(model);
             return FALSE;
          }
-         if (model->tree) {
-            if (last_tree)
-               last_tree->next = tree;
-         } else
+         if (model->tree)
+            last_tree->next = tree;
+         else
             model->tree = tree;
          tree->next = NULL;
          last_tree = tree;
